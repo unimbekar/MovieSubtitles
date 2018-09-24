@@ -17,4 +17,4 @@ txt_clip = txt_clip.set_pos('center').set_duration(10)
 clipvideo = CompositeVideoClip([clip, txt_clip])
 
 # Write the result to a file (many options available !)
-video.write_videofile("lincoln.webm")
+clipvideo.write_videofile("lincoln.webm")
