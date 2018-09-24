@@ -1,0 +1,201 @@
+sh -x makevideo.sh 
++ clear
+
++ python translatevideo.py -region us-east-1 -inbucket upen-data/ -infile lincoln.mp4 -outbucket upen-data/ -outfilename subtitledVideo -outfiletype mp4 -outlang es de
+==> translatevideo.py:
+
+==> Parameters: 
+	Input bucket/object: upen-data/lincoln.mp4
+	Output bucket/object: upen-data/subtitledVideo.mp4
+
+==> Target Language Translation Output: 
+	upen-data/subtitledVideo-es.mp4
+	upen-data/subtitledVideo-de.mp4
+Creating Job: transcribelincoln.mp4 for https://s3-us-east-1.amazonaws.com/upen-data/lincoln.mp4
+
+==> Transcription Job: transcribe_9f5cc447bdc34fb39a79c92f1b851334_lincoln.mp4
+	In Progress . . . . . . 
+Job Complete
+	Start Time: 2018-09-24 08:33:59.289000-04:00
+	End Time: 2018-09-24 08:36:40.716000-04:00
+	Transcript URI: https://s3.amazonaws.com/aws-transcribe-us-east-1-prod/721045248511/transcribe_9f5cc447bdc34fb39a79c92f1b851334_lincoln.mp4/asrOutput.json?X-Amz-Security-Token=FQoGZXIvYXdzEC0aDNgQuZr0xidEEzPEwiK3A2GAxyXFCNXd8cb0olpCw2jK3zfNdJgQinZDVc1giq79BIsnZhZWP817lo3Lbg1BYyzvkSDNCzWqCVrc3SIM7ScuJyB%2Bmyjvfvp%2BHORnmcEY5DpLRsmnt7V2v8IpPa5AKoOaQRMe4Y8es0RN6JGUOJ1zeowYksUOyKwbCTOyq0x%2Bd%2B2hwe2si8%2BXnDMcf6AXjj9BpaLvBu2Kjv5Aj%2BsP%2B7huqKeC5gkjvonvpU%2FJ8Iu7FcmFS7zzWK68NSNzfH9Dt%2BM%2BWWTvLz4hrQxeBECzeRGugkn9Q%2FL%2FCnOpr4fHz06XdImFP4U6iEXmV3QCqWMYMEx0guv%2FqAa4FXmYZ%2BtdC%2FOlbkAFhNXHOWzMX%2F3%2Bs9WuiAeodCqUjtn2FjfL02DpjsY2AAq1%2BMgDUv%2BsOUTiuLTLkmacQonZ4q7DVA4OSER2u%2FMD8486yJuqu0VGmN0eLLgRtR3UP%2FaGN02bTesm3P7dVfxab5azj0AD0TycbCvM82KTfmeutpnRs6LmKxDpLzFUwkMJZBzwr%2FpmSK%2FYED3LMUgjeyFI5JeH00iiha3lmvZ4o%2FvB9Jh1ez1tcQh%2B67ctEXVL8TEolp2j3QU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20180924T123700Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=ASIAUA2QCFAA7Q63VWDW%2F20180924%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=10eeb5f1e750006e3de69dadd3a8bd1aa296abe7d8bacfd6189941b50389423a
+==> Creating SRT from transcript
+==> Creating phrases from transcript...
+==> Writing phrases to disk...
+
+==> createVideo 
+	12:37:00 Reading video clip: lincoln.mp4
+		==> Original clip duration: 168.81
+	12:37:00 Using original audio track...
+	12:37:00 Reading subtitle file: subtitles-en.srt
+		==> Subtitles duration before: 143.55
+		==> Subtitles duration after: 168.809
+	12:37:00 Reading subtitle file complete: subtitles-en.srt
+	12:37:00 Creating Subtitles Track...
+	12:37:03 Creating composited video: subtitledVideo-en.mp4
+	12:37:03 Writing video file: subtitledVideo-en.mp4
+[MoviePy] >>>> Building video subtitledVideo-en.mp4
+[MoviePy] Writing audio in subtitledVideo-enTEMP_MPY_wvf_snd.mp3
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2739/2739 [00:01<00:00, 1643.07it/s]
+[MoviePy] Done.
+[MoviePy] Writing video subtitledVideo-en.mp4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3105/3105 [00:10<00:00, 272.67it/s]
+[MoviePy] Done.
+[MoviePy] >>>> Video ready: subtitledVideo-en.mp4 
+
+
+
+==> Translating from en to es
+==> Creating phrases from translation...
+	==> Writing  24025 bytes to audio file:  phraseAudio1.mp3
+	==> phraseAudio1.mp3  is closed
+	==> Writing  23085 bytes to audio file:  phraseAudio2.mp3
+	==> phraseAudio2.mp3  is closed
+	==> Writing  22144 bytes to audio file:  phraseAudio3.mp3
+	==> phraseAudio3.mp3  is closed
+	==> Writing  35467 bytes to audio file:  phraseAudio4.mp3
+	==> phraseAudio4.mp3  is closed
+	==> Writing  20890 bytes to audio file:  phraseAudio5.mp3
+	==> phraseAudio5.mp3  is closed
+	==> Writing  25906 bytes to audio file:  phraseAudio6.mp3
+	==> phraseAudio6.mp3  is closed
+	==> Writing  21204 bytes to audio file:  phraseAudio7.mp3
+	==> phraseAudio7.mp3  is closed
+	==> Writing  18696 bytes to audio file:  phraseAudio8.mp3
+	==> phraseAudio8.mp3  is closed
+	==> Writing  17913 bytes to audio file:  phraseAudio9.mp3
+	==> phraseAudio9.mp3  is closed
+	==> Writing  26063 bytes to audio file:  phraseAudio10.mp3
+	==> phraseAudio10.mp3  is closed
+	==> Writing  21204 bytes to audio file:  phraseAudio11.mp3
+	==> phraseAudio11.mp3  is closed
+	==> Writing  32802 bytes to audio file:  phraseAudio12.mp3
+	==> phraseAudio12.mp3  is closed
+	==> Writing  19166 bytes to audio file:  phraseAudio13.mp3
+	==> phraseAudio13.mp3  is closed
+	==> Writing  19793 bytes to audio file:  phraseAudio14.mp3
+	==> phraseAudio14.mp3  is closed
+	==> Writing  19793 bytes to audio file:  phraseAudio15.mp3
+	==> phraseAudio15.mp3  is closed
+	==> Writing  19950 bytes to audio file:  phraseAudio16.mp3
+	==> phraseAudio16.mp3  is closed
+	==> Writing  27787 bytes to audio file:  phraseAudio17.mp3
+	==> phraseAudio17.mp3  is closed
+	==> Writing  21831 bytes to audio file:  phraseAudio18.mp3
+	==> phraseAudio18.mp3  is closed
+	==> Writing  24966 bytes to audio file:  phraseAudio19.mp3
+	==> phraseAudio19.mp3  is closed
+	==> Writing  18383 bytes to audio file:  phraseAudio20.mp3
+	==> phraseAudio20.mp3  is closed
+	==> Writing  24339 bytes to audio file:  phraseAudio21.mp3
+	==> phraseAudio21.mp3  is closed
+	==> Writing  19480 bytes to audio file:  phraseAudio22.mp3
+	==> phraseAudio22.mp3  is closed
+	==> Writing  28884 bytes to audio file:  phraseAudio23.mp3
+	==> phraseAudio23.mp3  is closed
+	==> Writing  25436 bytes to audio file:  phraseAudio24.mp3
+	==> phraseAudio24.mp3  is closed
+	==> Writing  21517 bytes to audio file:  phraseAudio25.mp3
+	==> phraseAudio25.mp3  is closed
+	==> Writing  22928 bytes to audio file:  phraseAudio26.mp3
+	==> phraseAudio26.mp3  is closed
+==> Writing phrases to disk...
+
+==> createAudioTrackFromTranslation 
+	==> Successfully called Polly for speech synthesis
+	==> Writing  592815 bytes to audio file:  audio-es.mp3
+	==> audio-es.mp3  is closed
+
+==> createVideo 
+	12:37:25 Reading video clip: lincoln.mp4
+		==> Original clip duration: 168.81
+	12:37:25 Reading alternate audio track: audio-es.mp3
+		==> Audio duration: 168.81
+	12:37:25 Reading subtitle file: subtitles-es.srt
+		==> Subtitles duration before: 100.42
+		==> Subtitles duration after: 168.809
+	12:37:25 Reading subtitle file complete: subtitles-es.srt
+	12:37:25 Creating Subtitles Track...
+	12:37:27 Creating composited video: subtitledVideo-es.mp4
+	12:37:27 Writing video file: subtitledVideo-es.mp4
+[MoviePy] >>>> Building video subtitledVideo-es.mp4
+[MoviePy] Writing audio in subtitledVideo-esTEMP_MPY_wvf_snd.mp3
+ 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████       | 2120/2215 [00:01<00:00, 1694.97it/s]Traceback (most recent call last):
+  File "translatevideo.py", line 97, in <module>
+    createVideo( args.infile, "subtitles-" + lang + ".srt", args.outfilename + "-" + lang + "." + args.outfiletype, "audio-" + lang + ".mp3", False)
+  File "/home/upen/projects/MovieSubtitles/source/videoUtils.py", line 109, in createVideo
+    final.write_videofile(outputFileName)
+  File "<decorator-gen-51>", line 2, in write_videofile
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 54, in requires_duration
+    return f(clip, *a, **k)
+  File "<decorator-gen-50>", line 2, in write_videofile
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 137, in use_clip_fps_by_default
+    return f(clip, *new_a, **new_kw)
+  File "<decorator-gen-49>", line 2, in write_videofile
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 22, in convert_masks_to_RGB
+    return f(clip, *a, **k)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/video/VideoClip.py", line 318, in write_videofile
+    progress_bar=progress_bar)
+  File "<decorator-gen-73>", line 2, in write_audiofile
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 54, in requires_duration
+    return f(clip, *a, **k)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/AudioClip.py", line 213, in write_audiofile
+    progress_bar=progress_bar)
+  File "<decorator-gen-70>", line 2, in ffmpeg_audiowrite
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 54, in requires_duration
+    return f(clip, *a, **k)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/io/ffmpeg_audiowriter.py", line 170, in ffmpeg_audiowrite
+    progress_bar=progress_bar):
+  File "/usr/local/lib/python2.7/dist-packages/tqdm/_tqdm.py", line 937, in __iter__
+    for obj in iterable:
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/AudioClip.py", line 84, in generator
+    fps=fps, buffersize=chunksize)
+  File "<decorator-gen-72>", line 2, in to_soundarray
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 54, in requires_duration
+    return f(clip, *a, **k)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/AudioClip.py", line 130, in to_soundarray
+    snd_array = self.get_frame(tt)
+  File "<decorator-gen-10>", line 2, in get_frame
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 94, in get_frame
+    return self.make_frame(t)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/AudioClip.py", line 301, in make_frame
+    if (part is not False)]
+  File "<decorator-gen-10>", line 2, in get_frame
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 94, in get_frame
+    return self.make_frame(t)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/AudioClip.py", line 301, in make_frame
+    if (part is not False)]
+  File "<decorator-gen-10>", line 2, in get_frame
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 94, in get_frame
+    return self.make_frame(t)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 137, in <lambda>
+    newclip = self.set_make_frame(lambda t: fun(self.get_frame, t))
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 189, in <lambda>
+    return self.fl(lambda gf, t: gf(t_func(t)), apply_to,
+  File "<decorator-gen-10>", line 2, in get_frame
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 94, in get_frame
+    return self.make_frame(t)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 137, in <lambda>
+    newclip = self.set_make_frame(lambda t: fun(self.get_frame, t))
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 189, in <lambda>
+    return self.fl(lambda gf, t: gf(t_func(t)), apply_to,
+  File "<decorator-gen-10>", line 2, in get_frame
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/Clip.py", line 94, in get_frame
+    return self.make_frame(t)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/io/AudioFileClip.py", line 78, in <lambda>
+    self.make_frame = lambda t: self.reader.get_frame(t)
+  File "/usr/local/lib/python2.7/dist-packages/moviepy/audio/io/readers.py", line 169, in get_frame
+    "with clip duration=%d seconds, "%self.duration)
+IOError: Error in file audio-es.mp3, Accessing time t=98.83-98.88 seconds, with clip duration=98 seconds, 
+Exception KeyError: KeyError(<weakref at 0x7f98a22687e0; to 'tqdm' at 0x7f98a171c550>,) in <object repr() failed> ignored
+
