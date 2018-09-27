@@ -27,4 +27,6 @@
 # ==================================================================================
 
 clear
-python translatevideo.py -region us-east-1 -inbucket upen-data/ -infile lincoln.mp4 -outbucket upen-data/ -outfilename subtitledVideo -outfiletype mp4 -outlang es de
+#python translatevideo.py -region us-east-1 -inbucket upen-data/ -infile lincoln.mp4 -outbucket upen-data/ -outfilename subtitledVideo -outfiletype mp4 -outlang es de
+python translatevideo.py -region us-east-1 -inbucket upen-data/ -infile $1 -outbucket upen-data/ -outfilename subtitledVideo -outfiletype mp4 -outlang es de
+
